@@ -215,6 +215,8 @@ for v=1:block_size:ver
     end
 end
 
+Yout = Yout.^2; % for git test
+
 R = Yout + 1.402*(V - 128);
 G = Yout - 0.34414*(U - 128) - 0.71414*(V - 128);
 B = Yout + 1.772*(U - 128);
